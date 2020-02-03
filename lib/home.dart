@@ -18,7 +18,6 @@ class _MyHomePageState extends State<MyHomePage> {
       resizeToAvoidBottomInset: false,
       body: Stack(
         children: <Widget>[
-
           Image(
             image: AssetImage("assets/bg.jpg"),
             width: size.width,
@@ -30,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Padding(padding: EdgeInsets.only(top: 50),),
+              Padding(padding: EdgeInsets.only(top: 53),),
               Text("Home Page",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white,),),
               Padding(padding: EdgeInsets.only(top: 150),),
               Padding(

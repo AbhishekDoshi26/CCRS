@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:ccs/Grievance.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:toast/toast.dart';
@@ -105,7 +104,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
                             child: ClipRRect(
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(60.0)),
-                              child: Image.asset('assets/complaint.png'),
+                              child: Image.asset('assets/complaint.png',color: Colors.blueGrey, colorBlendMode: BlendMode.hue,),
                             ),
                           ),
                         ),
@@ -192,6 +191,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
         splashColor: Colors.grey.withOpacity(0.1),
         highlightColor: Colors.transparent,
         onTap: () {
+          //navigationtoScreen(listData.index);
           if (listData.index.toString() == "DrawerIndex.Grievances")
             Navigator.push(
               context,
@@ -207,7 +207,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
               context,
               MaterialPageRoute(builder: (context) => contactus()),
             );
-          else {}
         },
         child: Stack(
           children: <Widget>[

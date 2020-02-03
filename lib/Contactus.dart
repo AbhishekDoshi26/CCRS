@@ -13,7 +13,7 @@ class contactus extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Image(
-            image: AssetImage("assets/abstract_bg.jpg"),
+            image: AssetImage("assets/bg.jpg"),
             width: size.width,
             height: size.height,
             fit: BoxFit.fill,
@@ -23,7 +23,7 @@ class contactus extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Padding(padding: EdgeInsets.only(top: 50),),
+              Padding(padding: EdgeInsets.only(top: 53),),
               Text("About Us",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),textAlign: TextAlign.center,),
               Padding(padding: EdgeInsets.only(top: 175),),
               Padding(
